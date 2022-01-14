@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+black
+flake8
+alembic
+python-multipart
+aiofiles
+passlib
+bcrypt
+psycopg2
