@@ -8,3 +8,4 @@ aiofiles
 passlib
 bcrypt
 psycopg2-binary
+python-dotenv
