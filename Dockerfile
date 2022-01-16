@@ -7,6 +7,7 @@ WORKDIR /app
 COPY poetry.lock* pyproject.toml* ./
 
 RUN pip install poetry
-RUN poetry config virtualenvs.create false && poetry install
+RUN poetry config virtualenvs.create false
+RUN if [ -f pyproject.toml ]; then poetry install; fi
 
 COPY . .
